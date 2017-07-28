@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var ng2_map_1 = require("ng2-map");
 var app_component_1 = require("./app.component");
 var map_component_1 = require("./map_component/map.component");
 var AppModule = (function () {
@@ -16,7 +17,10 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [
+            platform_browser_1.BrowserModule,
+            ng2_map_1.Ng2MapModule.forRoot({ apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyAZpDyM-c--W0qZ9Y510vM5aklIOx07Pjk' })
+        ],
         declarations: [
             app_component_1.AppComponent,
             map_component_1.MapComponent

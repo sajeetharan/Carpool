@@ -8,6 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var MapComponent = (function () {
     function MapComponent() {
+        this.center = 'Colombo';
+        this.wayPoints = [
+            { location: { lat: 44.32384807250689, lng: -78.079833984375 }, stopover: true },
+            { location: { lat: 44.55916341529184, lng: -76.17919921875 }, stopover: true },
+        ];
     }
     return MapComponent;
 }());

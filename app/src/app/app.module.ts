@@ -8,7 +8,7 @@ import { MapComponent } from './map_component/map.component';
 @NgModule({
   imports: [
     BrowserModule,
-    Ng2MapModule.forRoot({ apiUrl: 'https://maps.google.com/maps/api/js?key=MY_GOOGLE_API_KEY' })
+    Ng2MapModule.forRoot({ apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyAZpDyM-c--W0qZ9Y510vM5aklIOx07Pjk' })
   ],
   declarations: [
     AppComponent,
