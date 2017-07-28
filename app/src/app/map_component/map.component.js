@@ -8,8 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var MapComponent = (function () {
     function MapComponent() {
-        this.center = 'Rajagiriya';
     }
+    MapComponent.prototype.ngOnInit = function () {
+        // directionsRendererDirective.initialized$.subscribe((e: any) => {
+        //     this.directionsRenderer = e;
+        // })
+    };
+    MapComponent.prototype.directionsChanged = function () {
+    };
+    MapComponent.prototype.showDirection = function () {
+    };
     return MapComponent;
 }());
 MapComponent = __decorate([
