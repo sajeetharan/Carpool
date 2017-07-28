@@ -6,23 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var map_component_1 = require("./map_component/map.component");
-var AppModule = (function () {
-    function AppModule() {
+var MapComponent = (function () {
+    function MapComponent() {
     }
-    return AppModule;
+    return MapComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [
-            app_component_1.AppComponent,
-            map_component_1.MapComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
+MapComponent = __decorate([
+    core_1.Component({
+        selector: 'map',
+        templateUrl: './map.component.html',
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], MapComponent);
+exports.MapComponent = MapComponent;
+//# sourceMappingURL=map.component.js.map
