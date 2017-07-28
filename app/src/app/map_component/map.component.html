@@ -1,6 +1,6 @@
-<ng2-map style="height: 600px; width: 800px" zoom=14 center={{center}}>
-    <!-- <directions draggable="true" panel="directions-panel" travel-mode="DRIVING" waypoints="{{wayPoints}}" origin="toronto" destination="ottawa">
-    </directions> -->
-</ng2-map>
-<div id="directions-panel" style="width: 28%; float:left; height: 100%; overflow: auto; padding: 0px 5px">
-</div>
+<ngui-map style="height:800px; width:800px" zoom="13" center={{center}}>
+    <!-- <directions-renderer [suppressMarkers]="true" [draggable]="true" panel="#my-panel"
+        [directions-request]="direction">
+    </directions-renderer> -->
+</ngui-map>
+<div id="my-panel"></div>
