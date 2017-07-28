@@ -12,8 +12,8 @@
     map: {
       // our app is within the app folder
       'app': 'app',
-
       // angular bundles
+      'ng2-map': '../node_modules/ng2-map/dist',
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
       '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
@@ -24,7 +24,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // other libraries
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -39,6 +39,9 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      'ng2-map': {
+        main: 'ng2-map.umd.js', defaultExtension: 'js'
       }
     }
   });
