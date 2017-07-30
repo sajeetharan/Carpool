@@ -1,4 +1,3 @@
 node_modules/
-app/src/app/**/*.js
-app/src/app/**/*.map
-/app/src/app/*.ts
+app/**/*.js
+app/**/*.map
