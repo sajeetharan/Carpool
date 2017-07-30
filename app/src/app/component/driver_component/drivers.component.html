@@ -1,0 +1,6 @@
+<div id="drivers">
+    <adddriver (refreshDriverList)="refreshDriverList()"></adddriver>
+    <ul>
+        <li *ngFor="let driver of drivers">{{driver.driverName}}</li>
+    </ul>
+</div>

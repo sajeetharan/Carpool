@@ -1,0 +1,26 @@
+<div id="reservationsComponent">
+  <table>
+    <caption>Reservations</caption>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Driver</th>
+        <th>Car</th>
+        <th>Start</th>
+        <th>End</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let reservation of reservations; let i=index">
+        <td>{{i}}</td>
+        <td>{{reservation.driverName}}</td>
+        <td>{{reservation.carName}}</td>
+        <td>{{reservation.startDate}}</td>
+        <td>{{reservation.endDate}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <!-- The event in parenthesis are classic JS events -->
+  <button Add driver</button>
+</div>
