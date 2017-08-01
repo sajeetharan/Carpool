@@ -1,9 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DirectionsRenderer } from '@ngui/map'
-@Component({
-    selector: 'map',
-    templateUrl: './map.component.html',
-})
+import { DirectionsRenderer } from '@ngui/map';
+
+@Component({ selector: 'map', templateUrl: './map.component.html' })
 export class MapComponent implements OnInit {
     @ViewChild(DirectionsRenderer) directionsRendererDirective: DirectionsRenderer;
 
@@ -12,17 +10,17 @@ export class MapComponent implements OnInit {
     direction: any = {
         origin: 'dehiwala junction dehiwala-mount lavinia',
         destination: 'Moratuwa',
-        travelMode: 'WALKING'
+        travelMode: 'DRIVING'
     };
     ngOnInit() {
-        this.directionsRendererDirective['initialized$'].subscribe((directionsRenderer: any) => {
-            this.directionsRenderer = directionsRenderer;
-        });
+        this
+            .directionsRendererDirective['initialized$']
+            .subscribe((directionsRenderer: any) => {
+                this.directionsRenderer = directionsRenderer;
+            });
     }
 
-    directionsChanged() {
-
-    }
+    directionsChanged() { }
 
     showDirection() {
         this.directionsRendererDirective['showDirections'](this.direction);

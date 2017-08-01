@@ -1,16 +1,13 @@
- <h1>Directions Renderer</h1>
-  <div id="floating-panel">
+<h1>Directions Renderer</h1>
+<div id="floating-panel">
   <b>Start: </b>
-  <ngui-map zoom="13" center="40.771, -73.974">
-    <directions-renderer
-      [suppressMarkers]="true"
-      [draggable]="true"
-      panel="#my-panel"
-      (directions_changed)="directionsChanged()"
+  <ngui-map style="height:1000px" zoom="13" center="Rajagiriya">
+    <directions-renderer [suppressMarkers]="true" [draggable]="true" panel="#my-panel" (directions_changed)="directionsChanged()"
       [directions-request]="direction">
     </directions-renderer>
   </ngui-map>
 
   <div id="my-panel"></div>
-  
-  directionsResult:<pre> {{directionsResult | json}}</pre>
+
+  directionsResult:
+  <pre> {{directionsResult | json}}</pre>
